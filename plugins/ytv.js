@@ -26,7 +26,7 @@ const url = data.url
 const ytdl = await fetchJson(`${apilink}/download/ytmp3?url=${data.url}`)
     
 let message = `‎‎
-╭═══🎶❃ *SILENT-SOBX-MD-MUSIC-DOWNLOADER* ❃🎶═══⊷
+╭═══🎶❃ *ANSH-KING-MD-MUSIC-DOWNLOADER* ❃🎶═══⊷
 ┃❃╭──────────────
 ┃❃│🎵 ‎TITLE: ${data.title}
 ┃❃│ ⏱ DURATION: ${data.timestamp}
@@ -36,7 +36,7 @@ let message = `‎‎
 ┃❃│📎 URL: ${data.url}
 ┃❃╰───────────────
 ╰═════════════════⊷
-> © ᴄʀᴇᴀᴛᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³² 👩‍💻
+> © ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀɴꜱʜʟᴏᴠᴇʀ⁷⁰² 👩‍💻
 
 > ↺ |◁   II   ▷|   ♡
 `
@@ -45,7 +45,7 @@ await conn.sendMessage(from, { image: { url : data.thumbnail }, caption: message
   
 // SEND AUDIO NORMAL TYPE and DOCUMENT TYPE
 await conn.sendMessage(from, { audio: { url: ytdl.result.dl_link }, mimetype: "audio/mpeg" }, { quoted: mek })
-await conn.sendMessage(from, { document: { url: ytdl.result.dl_link }, mimetype: "audio/mpeg", fileName: data.title + ".mp3", caption: `*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ···⁴³²* 👩‍💻`}, { quoted: mek })
+await conn.sendMessage(from, { document: { url: ytdl.result.dl_link }, mimetype: "audio/mpeg", fileName: data.title + ".mp3", caption: `*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀɴꜱʜʟᴏᴠᴇʀ···⁷⁰³* 👩‍💻`}, { quoted: mek })
   
 } catch(e){
 console.log(e)
@@ -70,7 +70,7 @@ let search = await yts(q)
 let link = search.all[0].url
 let desc = `
 *╭──────────●●►*
-_*♻️ SILENT-SOBX-MD VIDEO DOWNLOADER ♻️*_
+_*♻️ ANSH-KING-MD VIDEO DOWNLOADER ♻️*_
 *╰──────────●●►*
 
  *♻️ TITLE:* ${search.all[0].title}
@@ -85,7 +85,7 @@ _*♻️ SILENT-SOBX-MD VIDEO DOWNLOADER ♻️*_
 
  *♻️ URL:* ${search.all[0].url}
 
-> © ᴄʀᴇᴀᴛᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³² 👩‍💻
+> © ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀɴꜱʜʟᴏᴠᴇʀ⁷⁰³ 👩‍💻
 
 > ↺ |◁   II   ▷|   ♡
 `
@@ -98,7 +98,7 @@ await conn.sendMessage(from,{image:{url: search.all[0].thumbnail},caption:desc},
 await conn.sendMessage(from, {
   video: {url: data.result.downloadLink},
 mimetype: "video/mp4",
- fileName: `${data.result.title}.mp4`,caption: `*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ ···⁴³²* 👩‍💻`}, { quoted: mek })
+ fileName: `${data.result.title}.mp4`,caption: `*© ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀɴꜱʜʟᴏᴠᴇʀ ···⁷⁰³* 👩‍💻`}, { quoted: mek })
 
 }catch(e){
     console.log(e)
